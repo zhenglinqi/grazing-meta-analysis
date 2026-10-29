@@ -3,7 +3,7 @@
 ## Overview
 This repository contains the raw data and R scripts used in the meta-analysis described in the manuscript:
 
-**"Plant responses to grazing from a functional trait perspective: global evidence"** *(Submitted to Nature Communications)*
+**"Global synthesis reveals context-dependent plant functional trait responses to grazing"** *(Submitted to Nature Communications)*
 
 ## Repository Structure
 - `Database.xlsx` — Raw data extracted from literature
