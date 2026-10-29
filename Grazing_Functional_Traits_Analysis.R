@@ -2918,7 +2918,7 @@ predictor_labels <- c(
 # -----------------------------------------------------------------------------
 
 cat("========== Starting random forest analysis for 20 traits ==========\n")
-cat("Each trait uses ntree = 1000 and nrep = 999; runtime depends on hardware and data size.\n\n")
+cat("Each trait uses ntree = 1000 and num.rep = 999; runtime depends on hardware and data size.\n\n")
 
 all_results <- list()
 rf_models <- list()
@@ -2971,7 +2971,7 @@ for (i in seq_along(indicators)) {
   set.seed(2024)
   rf_fit <- tryCatch(
     rfPermute(lnRR ~ ., data = df_trait,
-              ntree = 1000, nrep = 999, num.cores = 1),
+              ntree = 1000, num.rep = 999, num.cores = 1),
     error = function(e) {
       cat(sprintf("  WARNING: model fitting failed: %s\n", e$message))
       NULL
